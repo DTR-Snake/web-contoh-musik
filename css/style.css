@@ -675,14 +675,10 @@ a:focus {
     padding: 45px 0 15px 0;
 }
 
-.service .service-item {
-    position: relative;
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 30px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, .1);
-    transition: .3s;
+.service .service-item{
+    overflow: hidden;
+    border: 5px solid rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
 }
 
 .service .service-item:hover {
@@ -691,8 +687,16 @@ a:focus {
 }
 
 .service .service-item img {
-    max-height: 50px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    display: block;
+    
+}
+.service .service-item h3,
+.service .service-item p,
+.service .service-item a{
+    padding: 0 20px;
 }
 
 .service .service-item h3 {
